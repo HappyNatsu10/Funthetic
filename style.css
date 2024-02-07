@@ -8,6 +8,9 @@
 
 body {
     background-color: #2A231F;
+    /* background-attachment: fixed;
+    background-image: url('images/illust_112710523_20231204_143408.png');
+    background-size: cover; */
 }
 
 .container {
@@ -218,6 +221,92 @@ nav a:nth-child(4):hover {
     text-align: center;
 }
 
+.service-hero {
+    margin-top: 100px;
+}
+
+
+
+.service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.service-wordings h4{
+    font-size:28px ;
+    margin-bottom: 30px;
+
+}
+
+.service-wordings h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.service-wordings p {
+    font-size: 23px;
+    margin-bottom: 30px; 
+}
+
+.service-wordings button {
+    background:linear-gradient(45deg,  #00478F, #FF5D00);
+    box-shadow:  0 1px 4px 0px rgba(255, 255, 255, 0.);
+    border-radius: 20px;
+    width: 120px;
+    height: 50px;
+    color: #fff;
+    font-size: 19px;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s ease-in-out;
+
+}
+
+.service-wordings button:hover{
+    background:linear-gradient(250deg,  #00478F, #2A231F);
+    animation: grad-animate 1s linear ease-in-out;
+}
+
+.service-items {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 30px;
+}
+
+.serv-items {
+    background:linear-gradient(45deg,  #00478F, #FF5D00);
+    /* box-shadow:  1px 1px 5px 0 rgba(255, 255, 255, 1 ); */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.serv-items h4 {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.serv-items p {
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -288,6 +377,36 @@ nav a:nth-child(4):hover {
 
     .item p {
         font-size: 15px;
+    }
+
+
+    .service {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .service-wordings {
+        text-align: center;
+    }
+
+    .service-wordings h4 {
+        font-size: 24px;
+    }
+
+    .service-wordings h2 {
+        font-size: 35px;
+    }
+
+    .service-wordings p {
+        font-size: 20px;
+    }
+
+    .service-items {
+        gap: 10px;
+    }
+
+    .serv-items {
+        padding: 10px;
     }
 }
 
